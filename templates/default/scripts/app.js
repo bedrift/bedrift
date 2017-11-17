@@ -1,5 +1,12 @@
 /* global $ */
 (function() {
+	/* google analytics code */
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-109846001-1');
+	
+	/* delayed code until jQuery is loaded */
 	window.run = function() {
 		$(window)
 			.on('scroll',function() {
@@ -55,6 +62,7 @@
 	};
 })();
 
+/* load jQuery async */
 (function(d,u,t,h,o) {
 	h = d.getElementsByTagName(t)[0];
 	o = d.createElement(t);
@@ -66,6 +74,7 @@
 	h.parentNode.insertBefore(o,h);
 })(document,'//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js','script');
 
+/* show hero background image */
 (function(d,h) {
 	h = d.getElementById('hero');
 	h.style.backgroundImage = 'url(' + h.getAttribute('data-background') + ')';
