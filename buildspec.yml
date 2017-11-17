@@ -25,4 +25,4 @@ artifacts:
   files:
     - public/**/*
   #discard-paths: yes
-  #base-directory: location
+  base-directory: public
