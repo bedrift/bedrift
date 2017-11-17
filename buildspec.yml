@@ -23,6 +23,6 @@ phases:
       #- 
 artifacts:
   files:
-    - src/public/**/*
+    - public/**/*
   #discard-paths: yes
   #base-directory: location
