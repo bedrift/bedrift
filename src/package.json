@@ -1,10 +1,11 @@
 {
 	"private": true,
 	"dependencies": {
-    	"less-plugin-clean-css": "1.5.1"
+    	"less-plugin-clean-css": "1.5.1",
+    	"cpx": "1.5.0"
 	},
 	"scripts": {
-		"clone": "rm -r public/ && cp templates/default/ public/ && rm -r public/styles"
-        "compile": "lessc --clean-css='--s1 --advanced --compatibility=ie8' templates/default/styles/main.less public/assets/styles.css"
+        "compile": "lessc --clean-css='--s1 --advanced --compatibility=ie8' templates/default/styles/main.less public/assets/styles.css",
+        "setup": "npm run clone && npm run compile"
     }
 }
