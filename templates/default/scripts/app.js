@@ -73,20 +73,3 @@
 	};
 	h.parentNode.insertBefore(o,h);
 })(document,'//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js','script');
-
-/* show hero background image */
-(function(d,h) {
-	h = d.getElementById('hero');
-	h.style.backgroundImage = 'url(' + h.getAttribute('data-background') + ')';
-})(document);
-
-/*
-(function(d,u,o) {
-	o = d.createElement('img');
-	o.onload = function() {
-		document.getElementById('hero').style.backgroundImage = 'url(' + this.src + ')';
-	};
-	o.async = 1;
-	o.src = u;
-})(document,'/images/hero.jpg');
-*/
